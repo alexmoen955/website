@@ -270,12 +270,13 @@ p {
     font-weight: bold;
     padding-top: 1rem;
     grid-area: title;
-    align-self: end;     
+    align-self: end;
+    margin-left: -0.1rem;
 }
 
 .gallery {
     display: grid;
-    grid-template: 1fr 1fr 3fr 1fr 3fr 1fr/ 1.5fr 3fr 1.5fr;
+    grid-template: 1fr 1fr 3fr 1fr 3fr 1fr/ repeat(3, 1fr);
     grid-template-areas:
     "gal-title . ."
     "gal-subtitle . ."
@@ -283,6 +284,7 @@ p {
     "text1 text2 text3"
     "image4 image5 image6"
     "text4 text5 text6";
+    grid-column-gap: 6rem;
     justify-items: center;
     padding: 3.5rem 0;
     width: 72rem;
@@ -296,186 +298,72 @@ p {
     padding-bottom: 0.7rem;
 }
 
-.image1 {
-    grid-area: image1;
+.image { 
     width: 20rem;
     height: auto;
-    filter: grayscale(0);
+    filter: grayscale(1);
     -webkit-filter: grayscale(1);
     transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
     align-self: center;
-    justify-self: left;
 }
 
-.image1:hover {
-    grid-area: image1;
-    width: 20rem;
-    height: auto;
+.image:hover{
     filter: grayscale(0);
     -webkit-filter: grayscale(0);
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    align-self: center;
-    justify-self: left;
+}
+
+.image1 {
+    grid-area: image1;
 }
 
 .image2 {
     grid-area: image2;
-    width: 20rem;
-    height: auto;
-    filter: grayscale(0);
-    -webkit-filter: grayscale(1);
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    align-self: center;
-    justify-self: center;
-
-}
-
-.image2:hover {
-    grid-area: image2;
-    width: 20rem;
-    height: auto;
-    filter: grayscale(0);
-    -webkit-filter: grayscale(0);
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    align-self: center;
-    justify-self: center;
 }
 
 .image3 {
     grid-area: image3;
-    width: 20rem;
-    height: auto;
-    filter: grayscale(0);
-    -webkit-filter: grayscale(1);
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    align-self: center;
-    justify-self: right;
-}
-
-.image3:hover {
-    grid-area: image3;
-    width: 20rem;
-    height: auto;
-    filter: grayscale(0);
-    -webkit-filter: grayscale(0);
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    align-self: center;
-    justify-self: right;
 }
 
 .image4 {
     grid-area: image4;
-    width: 20rem;
-    height: auto;
-    filter: grayscale(0);
-    -webkit-filter: grayscale(1);
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    align-self: center;
-    justify-self: left;
-}
-
-.image4:hover {
-    grid-area: image4;
-    width: 20rem;
-    height: auto;
-    filter: grayscale(0);
-    -webkit-filter: grayscale(0);
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    align-self: center;
-    justify-self: left;
 }
 
 .image5 {
     grid-area: image5;
-    width: 20rem;
-    height: auto;
-    filter: grayscale(0);
-    -webkit-filter: grayscale(1);
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    align-self: center;
-    justify-self: center;
-}
-
-.image5:hover {
-    grid-area: image5;
-    width: 20rem;
-    height: auto;
-    filter: grayscale(0);
-    -webkit-filter: grayscale(0);
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    align-self: center;
-    justify-self: center;
 }
 
 .image6 {
     grid-area: image6;
-    width: 20rem;
-    height: auto;
-    filter: grayscale(0);
-    -webkit-filter: grayscale(1);
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    align-self: center;
-    justify-self: right;
 }
 
-.image6:hover {
-    grid-area: image6;
-    width: 20rem;
-    height: auto;
-    filter: grayscale(0);
-    -webkit-filter: grayscale(0);
-    transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    align-self: center;
-    justify-self: right;
+.text{
+    padding-top: 1rem;
+    font-style: italic;
 }
 
 .text1 {
     grid-area: text1;
-    padding-top: 1rem;
-    font-style: italic;
 }
 
 .text2 {
     grid-area: text2;
-    padding-top: 1rem;
-    font-style: italic;
 }
 
 .text3 {
     grid-area: text3;
-    padding-top: 1rem;
-    font-style: italic;
 }
 
 .text4 {
     grid-area: text4;
-    padding-top: 1rem;
-    font-style: italic;
 }
 
 .text5 {
     grid-area: text5;
-    padding-top: 1rem;
-    font-style: italic;
 }
 
 .text6 {
     grid-area: text6;
-    justify-self: center;
-    padding-top: 1rem;
-    font-style: italic;
 }
 
 .gallery__subtitle {
