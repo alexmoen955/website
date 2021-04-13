@@ -150,7 +150,7 @@ p {
 }
 
 .frontgallery__text-container {
-    margin-top: 2rem;
+    margin-top: 0.8rem;
 }
 
 .frontgallery__image {
@@ -251,6 +251,7 @@ p {
 }
 
 /* GALLERY PAGE */
+
 .navigationlarge-wrapper {
     display: flex;
     justify-content: space-between;
@@ -295,7 +296,7 @@ p {
 .gallery__title {
     grid-area: gal-title;
     justify-self: left;
-    padding-bottom: 0.7rem;
+    padding-bottom: 1rem;
 }
 
 .image { 
@@ -396,3 +397,22 @@ p {
     opacity: 1;
   }
 }
+
+/* CONTACT PAGE */
+
+.contact {
+    display: flex;
+}
+
+.contact__form {
+    width: 50%;
+    margin: 6rem auto;
+}
+
+.footer--contact {
+    background-color: #A7754D;
+    margin-top: -1rem;  
+}
+
+/*Media Queries*/
+
